@@ -21,9 +21,7 @@ boost::lockfree::stack:
     boost::lockfree::stack: Producer threads:3, Consumer threads:3, producer_counter: 9999999, consumer_counter 9999999. Time        Taken:2.81599 seconds.
     boost::lockfree::stack: Producer threads:4, Consumer threads:4, producer_counter: 10000000, consumer_counter 10000000. Time      Taken:3.22939 seconds.
 
-boost::lockfree::spsc_queue:
 
-    boost::lockfree::spsc_queue: Producer threads:1, Consumer threads:1, producer_counter: 10000000, consumer_counter 10000000.      Time Taken:0.86385 seconds.
 
 moodycamel::ConcurrentQueue:
 
@@ -32,3 +30,12 @@ moodycamel::ConcurrentQueue:
     moodycamel::ConcurrentQueue: Producer threads:3, Consumer threads:3, producer_counter: 9999999, consumer_counter 9999999.        Time Taken:0.868555 seconds.
     moodycamel::ConcurrentQueue: Producer threads:4, Consumer threads:4, producer_counter: 10000000, consumer_counter 10000000.      Time Taken:0.810693 seconds.
 
+Single Producer / Single Consumer:
+
+boost::lockfree::spsc_queue:
+
+    boost::lockfree::spsc_queue: Producer threads:1, Consumer threads:1, producer_counter: 10000000, consumer_counter 10000000. Time Taken:0.776101 seconds.
+
+moodycamel::ReaderWriterQueue:
+
+    moodycamel::ReaderWriterQueue: Producer threads:1, Consumer threads:1, producer_counter: 10000000, consumer_counter 10000000. Time Taken:0.586292 seconds.
