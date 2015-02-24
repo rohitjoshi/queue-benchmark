@@ -4,8 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>atomicops.h</itemPath>
       <itemPath>concurrentqueue.h</itemPath>
       <itemPath>queue_test.h</itemPath>
+      <itemPath>readerwriterqueue.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -45,11 +47,15 @@
           <commandlineTool>/usr/local/bin/g++-4.9</commandlineTool>
         </linkerTool>
       </compileType>
+      <item path="atomicops.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="concurrentqueue.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="queue_test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="readerwriterqueue.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -77,11 +83,15 @@
           <commandlineTool>/usr/local/bin/g++-4.9</commandlineTool>
         </linkerTool>
       </compileType>
+      <item path="atomicops.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="concurrentqueue.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="queue_test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="readerwriterqueue.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

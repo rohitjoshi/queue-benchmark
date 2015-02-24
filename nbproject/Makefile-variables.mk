@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=queuetest
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/queuetest
+CND_ARTIFACT_NAME_Debug=queue-benchmark
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/queue-benchmark
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=queuetest.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/queuetest.tar
+CND_PACKAGE_NAME_Debug=queue-benchmark.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/queue-benchmark.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=queuetest
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/queuetest
+CND_ARTIFACT_NAME_Release=queue-benchmark
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/queue-benchmark
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=queuetest.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/queuetest.tar
+CND_PACKAGE_NAME_Release=queue-benchmark.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/queue-benchmark.tar
 #
 # include compiler specific variables
 #
