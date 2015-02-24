@@ -1,16 +1,9 @@
-/* 
- * File:   queue_test.h
- * Author: ytr289
- *
- * Created on February 24, 2015, 10:44 AM
- */
-
 #ifndef QUEUE_TEST_H
 #define	QUEUE_TEST_H
 
 /* 
  * File:   test.h
- * Author: ytr289
+ * Author: Rohit Joshi
  *
  * Created on February 12, 2015, 8:29 AM
  */
