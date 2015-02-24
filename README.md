@@ -1,5 +1,5 @@
 # queue-benchmark
-Here are comparision between boost lock free queuea and moodycamel queues.
+Here are comparision between boost lock free queues and moodycamel queues.
 
 1. Multi Consumers and Multi Producers:   boost::lockfree::queue , boost::lockfree::stack, and moodycamel::ConcurrentQueue for concurrent/ access.
 2. Single Consumer and Single Producer: boost::lockfree::spsc_queue and moodycamel::ReaderWriterQueue.  
