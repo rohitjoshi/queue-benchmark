@@ -1,7 +1,7 @@
 # queue-benchmark
 Here is comparision between boost::lockfree::queue , boost::lockfree::stack, boost::lockfree::spsc_queue and moodycamel::ConcurrentQueue.  
 
-1. For single consumer/single producer: boost::lockfree:spsc_queue obvisouly outperform.  This is Apple to Orange comparision because other queue support concurrent access.
+1. For single consumer/single producer: boost::lockfree:spsc_queue obviously outperform.  This is Apple to Orange comparision because other queues support concurrent access.
 
 2. For concurrent access, moodycamel::ConcurrentQueue outperforms both boost queue and stack
 
