@@ -5,7 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>concurrentqueue.h</itemPath>
-      <itemPath>zmq.hpp</itemPath>
+      <itemPath>queue_test.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -37,12 +37,19 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <commandlineTool>/usr/local/bin/g++-4.9</commandlineTool>
+          <commandLine>-O3 -DNDEBUG -flto -include concurrentqueue.h -std=c++11</commandLine>
+        </ccTool>
+        <linkerTool>
+          <commandlineTool>/usr/local/bin/g++-4.9</commandlineTool>
+        </linkerTool>
       </compileType>
       <item path="concurrentqueue.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="zmq.hpp" ex="false" tool="3" flavor2="0">
+      <item path="queue_test.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -56,11 +63,9 @@
           <developmentMode>5</developmentMode>
         </cTool>
         <ccTool>
-          <developmentMode>6</developmentMode>
-          <architecture>2</architecture>
-          <standard>8</standard>
+          <developmentMode>5</developmentMode>
           <commandlineTool>/usr/local/bin/g++-4.9</commandlineTool>
-          <commandLine>-DNDEBUG</commandLine>
+          <commandLine>-O3 -DNDEBUG -flto -include concurrentqueue.h -std=c++11</commandLine>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
@@ -68,12 +73,15 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <commandlineTool>/usr/local/bin/g++-4.9</commandlineTool>
+        </linkerTool>
       </compileType>
       <item path="concurrentqueue.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="zmq.hpp" ex="false" tool="3" flavor2="0">
+      <item path="queue_test.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

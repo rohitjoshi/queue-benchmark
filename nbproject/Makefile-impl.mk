@@ -24,10 +24,10 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=queue-benchmark
+PROJECTNAME=QueueTest
 
 # Active Configuration
-DEFAULTCONF=Release
+DEFAULTCONF=Debug
 CONF=${DEFAULTCONF}
 
 # All Configurations

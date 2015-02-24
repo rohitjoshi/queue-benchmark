@@ -14,7 +14,7 @@ GREP=grep
 NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
-CC=gcc
+CC=gcc-4.9
 CCC=/usr/local/bin/g++-4.9
 CXX=/usr/local/bin/g++-4.9
 FC=gfortran
@@ -42,8 +42,8 @@ OBJECTFILES= \
 CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=-m64 -DNDEBUG
-CXXFLAGS=-m64 -DNDEBUG
+CCFLAGS=-O3 -DNDEBUG -flto -include concurrentqueue.h -std=c++11
+CXXFLAGS=-O3 -DNDEBUG -flto -include concurrentqueue.h -std=c++11
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -56,16 +56,16 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queue-benchmark
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queuetest
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queue-benchmark: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queuetest: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queue-benchmark ${OBJECTFILES} ${LDLIBSOPTIONS}
+	/usr/local/bin/g++-4.9 -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queuetest ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O3 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:
@@ -73,7 +73,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queue-benchmark
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/queuetest
 
 # Subprojects
 .clean-subprojects:
