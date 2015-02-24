@@ -73,8 +73,8 @@ void producer<moodycamel::ConcurrentQueue<std::string>, std::string>(moodycamel:
     moodycamel::ProducerToken ptok(queue);
     for (int i = 0; i != iterations; ++i) {
       
-        //if(queue.enqueue(data) && use_counter) {  This work fine
-        if(queue.enqueue(ptok, data) && use_counter) { //This will create a sivev
+        if(queue.enqueue(data) && use_counter) {  This work fine
+       // if(queue.enqueue(ptok, data) && use_counter) { //This will create a stack dump
            ++counter;
         }
     }
