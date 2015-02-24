@@ -1,11 +1,17 @@
 # queue-benchmark
-Here is comparision between boost::lockfree::queue , boost::lockfree::stack, boost::lockfree::spsc_queue and moodycamel::ConcurrentQueue.  
+Here are comparision between boost lock free queuea and moodycamel queues.
+
+1. Multi Consumers and Multi Producers:   boost::lockfree::queue , boost::lockfree::stack, and moodycamel::ConcurrentQueue for concurrent/ access.
+2. Single Consumer and Single Producer: boost::lockfree::spsc_queue and moodycamel::ReaderWriterQueue.  
+
+Observations:
 
 1. For single consumer/single producer: moodycamel::ReaderWriterQueue  is faster than boost::lockfree::spsc_queue
 
 2. For concurrent access, moodycamel::ConcurrentQueue outperforms both boost queue and stack
 
 3. For some reason, moodycamel::ConcurrentQueue has better performance when 3 or 4 producers/consumers are used than 1 or 2 threads.  
+
 
 boost::lockfree::queue:
 
