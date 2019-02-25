@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: ytr289
+ * Author: Rohit joshi
  *
  * Created on February 24, 2015, 10:43 AM
  */
